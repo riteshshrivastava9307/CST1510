@@ -8,8 +8,6 @@ Date  : 18 October 2026
 """
 
 
-# =================================================================== FUNCTIONS
-
 def check_record(value, limit):
     """Calculate the difference, percentage and status of a record."""
     difference = value - limit
@@ -36,8 +34,6 @@ def print_report(label, value, limit, difference, percent, status):
     print("------------------------")
 
 
-# ====================================================================== STORE
-
 def load_records(path):
     """Load records from a file and return a list of dictionaries."""
     records = []
@@ -62,8 +58,6 @@ except FileNotFoundError:
     print("Error: records.txt was not found.")
     records = []
 
-
-# =============================================================== PROCESS + OUTPUT
 
 over_limit_count = 0
 

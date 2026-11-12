@@ -9,7 +9,6 @@ Date  : 18 October 2026
 Run it: python template.py
 """
 
-# ====================================================================== CLASS
 
 class Record:
     """Represent a record with its label, value and limit."""
@@ -32,8 +31,6 @@ class Record:
             return "OK"
 
 
-# ==================================================================== RECORDS
-
 def load_records(path):
     """Load records from a file and return Record objects."""
     records = []
@@ -55,8 +52,6 @@ except FileNotFoundError:
     print("Error: records.txt was not found.")
     records = []
 
-
-# ==================================================================== OUTPUT
 
 over_limit_count = 0
 
